@@ -1,10 +1,10 @@
 const config = {
-  username: process.env.USERNAME,
-  password: process.env.PASSWORD,
-  database: process.env.DATABASE,
-  host: process.env.HOST,
-  port: process.env.DB_PORT,
-  dialect: process.env.DIALECT,
+  username: process.env.SQL_USERNAME,
+  password: process.env.SQL_PASSWORD,
+  database: process.env.SQL_DATABASE,
+  host: process.env.SQL_HOST,
+  port: process.env.SQL_PORT,
+  dialect: process.env.SQL_DIALECT,
 };
 
 export default {
