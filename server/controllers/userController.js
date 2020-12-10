@@ -1,8 +1,6 @@
-import db from '../models';
+import User from '../models/User';
 
-export const getAllUsers = async (req, res, next) => {
-  try {
-    const data = await db.User.findAll({});
-    res.send({ name: 'User Route', data });
-  } catch (err) { next(err); }
+export const index = async (req, res) => {
+  const data = await User.findAll({});
+  res.send({ name: 'User Route', data });
 };
