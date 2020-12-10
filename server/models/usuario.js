@@ -1,14 +1,14 @@
 import { Model, DataTypes } from 'sequelize';
 
-export default class User extends Model {
+export default class Usuario extends Model {
   static init(sequelize) {
     return super.init(
       {
-        name: DataTypes.STRING
+        nombre: DataTypes.STRING
       },
       {
         sequelize,
-        modelName: 'user'
+        modelName: 'usuario'
       }
     );
   }

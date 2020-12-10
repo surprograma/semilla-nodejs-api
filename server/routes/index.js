@@ -1,5 +1,8 @@
-import users from './users';
+import express from 'express';
+import usuarios from './usuarios';
 
-export function registrarRutas(app) {
-  app.use('/api/users', users);
-}
+const router = express.Router();
+
+router.use('/api/usuarios', usuarios);
+
+export default router;
