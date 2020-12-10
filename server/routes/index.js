@@ -1,2 +1,7 @@
-export { default as users } from './users';
-export { default as hello } from './hello';
+import users from './users';
+import hello from './hello';
+
+export function registrarRutas(app) {
+  app.use('/api', hello);
+  app.use('/api/users', users);
+}
