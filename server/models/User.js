@@ -1,7 +1,15 @@
-export default (sequelize, DataTypes) => {
-  const User = sequelize.define('User', {
-    name: DataTypes.STRING
-  });
+import { Model, DataTypes } from 'sequelize';
 
-  return User;
-};
+export default class User extends Model {
+  static init(sequelize) {
+    return super.init(
+      {
+        name: DataTypes.STRING
+      },
+      {
+        sequelize,
+        modelName: 'user'
+      }
+    );
+  }
+}
