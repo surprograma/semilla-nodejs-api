@@ -6,8 +6,8 @@
 
 import debugPkg from 'debug';
 import http from 'http';
-import app from '../app';
-import db from '../models';
+import app from '../lib/app';
+import db from '../lib/models';
 
 const debug = debugPkg('js/www:server');
 
