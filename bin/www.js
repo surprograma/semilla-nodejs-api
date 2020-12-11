@@ -29,7 +29,7 @@ const server = http.createServer(app);
  */
 
 // Run sequelize before listen
-db.sequelize.sync({ force: true }).then(() => {
+db.sequelize.authenticate().then(() => {
   app.listen(port, () => {
     console.log(`App listening on PORT ${port}`);
   });
