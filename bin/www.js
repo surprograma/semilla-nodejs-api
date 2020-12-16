@@ -31,7 +31,7 @@ const server = http.createServer(app);
 // Run sequelize before listen
 db.sequelize.authenticate().then(() => {
   app.listen(port, () => {
-    console.log(`App listening on PORT ${port}`);
+    console.log(`¡Aplicación iniciada! ====> 🌎 http://localhost:${port}`);
   });
 });
 
@@ -67,9 +67,7 @@ function onError(error) {
     throw error;
   }
 
-  const bind = typeof port === 'string'
-    ? `Pipe ${port}`
-    : `Port ${port}`;
+  const bind = typeof port === 'string' ? `Pipe ${port}` : `Port ${port}`;
 
   // handle specific listen errors with friendly messages
   switch (error.code) {
@@ -92,8 +90,6 @@ function onError(error) {
 
 function onListening() {
   const addr = server.address();
-  const bind = typeof addr === 'string'
-    ? `pipe ${addr}`
-    : `port ${addr.port}`;
+  const bind = typeof addr === 'string' ? `pipe ${addr}` : `port ${addr.port}`;
   debug(`Listening on ${bind}`);
 }
