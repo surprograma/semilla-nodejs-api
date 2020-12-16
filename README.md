@@ -3,21 +3,28 @@
 ## Configuración inicial
 
 ```shell
-# Levantar y configurar la base de datos
+# Levantar y configurar las bases de datos
 docker-compose up -d
 
 # Copiar las variables de entorno necesarias para acceder a la DB
 cp .env.example .env
+
+# Instalar las dependencias
+npm install
+
+# Ejecutar las migraciones para las bases de dev y test
+npm run db:init
+NODE_ENV=test npm run db:init
 ```
 
 ## Base de datos
 
 ```shell
 # Ejecutar las migraciones
-npx sequelize db:migrate
+npm run db:init
 
 # Cargar datos de prueba
-npx sequelize db:seed:all
+npm run db:seed
 
 # Crear una nueva migración
 npx sequelize migration:generate --name add-descripcion-to-producto
