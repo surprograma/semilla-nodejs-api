@@ -11,3 +11,4 @@ env:
   global:
     - SQL_USERNAME=postgres
     - SQL_TEST_DATABASE=travis_ci_test
+    - NODE_ENV=test
