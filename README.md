@@ -79,6 +79,6 @@ npm run db:seed
 # Crea una nueva migración llamada `add-descripcion-to-producto`.
 npx sequelize migration:generate --name add-descripcion-to-producto
 
-# Crea un nuevo seed llamado `edificios`
+# Crea un nuevo seeder llamado `edificios`.
 npx sequelize seed:generate --name edificios
 ```
