@@ -23,19 +23,29 @@ Por último, se incluye un archivo de [Docker Compose](https://docs.docker.com/c
 
 ## Configuración inicial del proyecto
 
+Asumiendo que ya configuraste todos los prerrequisitos, y que vas a utilizar Docker, estos son los comandos que deberías ejecutar la primera vez que trabajes en el proyecto:
+
 ```shell
-# Levantar y configurar las bases de datos
+# Instala, configura y levanta las bases de datos.
+# El flag -d (daemon) hace que la ejecución continue incluso luego de reiniciar la máquina.
 docker-compose up -d
 
-# Copiar las variables de entorno necesarias para acceder a la DB
+# Copia las variables de entorno necesarias para acceder a las bases de datos.
 cp .env.example .env
 
-# Instalar las dependencias
+# Instala las dependencias Node del proyecto.
 npm install
 
-# Ejecutar las migraciones para las bases de dev y test
+# Ejecuta las migraciones iniciales para las bases de dev y test.
 npm run db:init
 NODE_ENV=test npm run db:init
+```
+
+De manera opcional, también podés cargar unos datos de prueba que vienen incluido en el proyecto. A medida que el desarrollo continue, se podrían seguir agregando datos que ayuden en las pruebas manuales. Ejecutar este comando:
+
+```shell
+# (Opcional) Carga los datos de prueba en la base de desarrollo.
+npm run db:seed
 ```
 
 ## Base de datos
