@@ -19,8 +19,8 @@
     "lint": "run-p lint:*",
     "lint:eslint": "eslint --fix ./lib",
     "lint:prettier": "prettier --write ./lib",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "jest --runInBand",
+    "test:watch": "jest --runInBand --watch"
   },
   "nodemonConfig": {
     "exec": "npm run dev",
