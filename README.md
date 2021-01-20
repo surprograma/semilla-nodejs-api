@@ -1,4 +1,4 @@
-# Repositorio semilla: API NodeJS
+# Repositorio semilla: API NodeJS :seedling:
 
 ¡Bienvenida/o! En este repositorio encontrarás una plantilla (de las infinitas posibles) para crear una API utilizando NodeJS. Las principales tecnologías que utilizamos son:
 
@@ -10,7 +10,7 @@
 
 Para crear un proyecto siguiendo esta plantilla, lo único que tenés que hacer es clickear en el botón que dice `Use this template`. ¡Y no te olvides de cambiarle el nombre en el `package.json`!
 
-## Prerrequisitos - para instalar antes de empezar
+## :point_up: Prerrequisitos - para instalar antes de empezar
 
 Vas a necesitar un IDE o al menos un editor de texto que coloree la sintaxis. Recomendamos utilizar [Visual Studio Code](https://code.visualstudio.com/) - que se lleva muy bien con proyectos JavaScript - enriquecido con los siguientes plugins:
 
@@ -23,7 +23,7 @@ Para ejecutar el código es necesario tener NodeJS en su versión 14 (`lts/fermi
 
 Por último, se incluye un archivo de [Docker Compose](https://docs.docker.com/compose/) con todo lo necesario para instalar y configurar las bases de datos en PostgreSQL (una para desarrollo y otra para test). Si por algún motivo no querés usar Docker, vas a tener que instalar PostgreSQL y luego ejecutar el script `docker/init/crear-db.sh` en tu entorno.
 
-## Configuración inicial del proyecto
+## :ballot_box_with_check: Configuración inicial del proyecto
 
 Asumiendo que ya configuraste todos los prerrequisitos y que vas a utilizar Docker, estos son los comandos que deberías ejecutar la primera vez que trabajes en el proyecto:
 
@@ -50,7 +50,7 @@ De manera opcional, también podés cargar unos datos de prueba, llamados _seede
 npm run db:seed
 ```
 
-## Estructura de directorios
+## :file_folder: Estructura de directorios
 
 Breve descripción de qué se puede encontrar en cada uno de los directorios del proyecto:
 
@@ -69,7 +69,7 @@ Breve descripción de qué se puede encontrar en cada uno de los directorios del
 └── test                # Utilidades para escribir tests
 ```
 
-## Comandos útiles para el día a día
+## :woman_technologist: :man_technologist: Comandos útiles para el día a día
 
 A continuación, algunos comandos necesarios para el desarrollo diario en este proyecto.
 
