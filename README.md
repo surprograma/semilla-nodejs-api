@@ -1,6 +1,6 @@
 # Repositorio semilla: API NodeJS :seedling:
 
-> Este es uno de los repositorios que utilizamos en la serie **Tu primera aplicación full stack: NodeJS + React**, [disponible en YouTube](https://www.youtube.com/playlist?list=PL7q-McYJyHlgVGQIRYVKl381twyJ4XM_h). Te recomendamos que mires la serie para entender un poco más sobre las tecnologías que utilizamos acá. :smiley:
+> Este es uno de los repositorios que utilizamos en la serie **Tu primera aplicación full stack: NodeJS + React**, [disponible en YouTube](https://www.youtube.com/playlist?list=PL7q-McYJyHlgVGQIRYVKl381twyJ4XM_h). Te recomendamos que mires la serie para entender un poco más sobre las tecnologías que elegimos. :smiley:
 
 ¡Bienvenida/o! En este repositorio encontrarás una plantilla (de las infinitas posibles) para crear una API utilizando NodeJS. Las principales tecnologías que utilizamos son:
 
