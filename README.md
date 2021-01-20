@@ -50,6 +50,25 @@ De manera opcional, también podés cargar unos datos de prueba, llamados _seede
 npm run db:seed
 ```
 
+## Estructura de directorios
+
+Breve descripción de qué se puede encontrar en cada uno de los directorios del proyecto:
+
+```shell
+.
+├── bin                 # Punto de entrada del servidor
+├── db
+│   ├── migrations      # Migraciones de la base de datos
+│   └── seeders         # Datos de prueba para la base de datos
+├── docker              # Configuración de Docker para desarrollo
+├── lib
+│   ├── config          # Configuración de la base de datos
+│   ├── controllers     # Acciones de nuestra aplicación
+│   ├── models          # Definición de modelos, atributos, etc
+│   └── routes          # Rutas de la API
+└── test                # Utilidades para escribir tests
+```
+
 ## Comandos útiles para el día a día
 
 A continuación, algunos comandos necesarios para el desarrollo diario en este proyecto.
